@@ -16,7 +16,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
 
     <!-- <!—- ShareThis BEGIN -—> -->
-    <script async src="https://platform-api.sharethis.com/js/sharethis.js#property=5d491feb3387b20012d76ae9&product="sticky-share-buttons"></script>
+    <script async src="https://platform-api.sharethis.com/js/sharethis.js#property=5d491feb3387b20012d76ae9&product="
+        sticky-share-buttons"></script>
     <!-- <!—- ShareThis END -—> -->
 </head>
 
@@ -109,8 +110,13 @@
 
                         </div>
                         <div class="card__actions">
-                            <a href="#" class="btn">Book your treatment</a>
+                            <!-- <a href="#" class="btn">Book your treatment</a> -->
+                            <!-- Button trigger modal -->
+<button type="button" class="btn" data-toggle="modal" data-target="#contactUs">
+        Book your treatment
+      </button>
                         </div>
+
                     </div>
 
                 </div>
@@ -310,6 +316,43 @@
 
 
     </footer>
+    <!-- Form Modal -->
+    <!-- Modal -->
+<div class="modal fade" id="contactUs" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                    <form method="POST" action="onlinereikimaster@gmail.com">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Your Query</label>
+                                <textarea name="message" placeholder="Text Message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
+                        
+                        
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        
+                      </form>
+            
+                   
+                          
+                        
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    <!-- Form Model Ends -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -326,23 +369,31 @@
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v4.0">
     </script>
     <!-- WhatsHelp.io widget -->
-<script type="text/javascript">
-    (function () {
-        var options = {
-            facebook: "1518219948431231", // Facebook page ID
-            whatsapp: "9720568758", // WhatsApp number
-            call_to_action: "", // Call to action
-            button_color: "#FF6550", // Color of button
-            position: "right", // Position may be 'right' or 'left'
-            order: "whatsapp,facebook", // Order of buttons
-        };
-        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-    })();
-</script>
-<!-- /WhatsHelp.io widget -->
+    <script type="text/javascript">
+        (function () {
+            var options = {
+                facebook: "1518219948431231", // Facebook page ID
+                whatsapp: "9720568758", // WhatsApp number
+                call_to_action: "", // Call to action
+                button_color: "#FF6550", // Color of button
+                position: "right", // Position may be 'right' or 'left'
+                order: "whatsapp,facebook", // Order of buttons
+            };
+            var proto = document.location.protocol,
+                host = "whatshelp.io",
+                url = proto + "//static." + host;
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () {
+                WhWidgetSendButton.init(host, proto, options);
+            };
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+        })();
+    </script>
+    <!-- /WhatsHelp.io widget -->
 
 </body>
 
